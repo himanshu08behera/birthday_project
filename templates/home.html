@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="hero">
+
+    <div class="overlay">
+
+        <h1 class="logo">
+            ASHISH'S BIRTHDAY 🎂
+        </h1>
+
+        <div class="hero-content">
+
+            <h2>
+                Ashish:
+                A Journey Of Memories ✨
+            </h2>
+
+            <p>
+                Every picture holds a story,<br>
+                Every smile holds a memory,<br>
+                Every friendship holds a treasure,<br>
+                Today we celebrate Ashish ❤️
+            </p>
+
+            <a href="{% url 'quotes' %}" class="btn">
+                💌 Wishes
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<h2 class="section-heading">
+    Some Beautiful Memories ❤️
+</h2>
+
+<div class="movie-row">
+
+   <a href="{% url 'freshers' %}" class="card">
+    <img src="{% static 'images/freshers/freshers_7.jpeg' %}">
+    <span>Freshers</span>
+</a>
+
+    <a href="{% url 'homies' %}" class="card">
+        <img src="{% static 'images/homies/homies_1.webp' %}">
+        <span>Homies</span>
+    </a>
+
+    <a href="{% url 'lastday' %}" class="card">
+        <img src="{% static 'images/last_day/last_day_1.jpeg' %}">
+        <span>Last Day</span>
+    </a>
+
+    <a href="{% url 'phase' %}" class="card">
+        <img src="{% static 'images/phase/phase1.jpeg' %}">
+        <span>Phase</span>
+    </a>
+
+    <a href="{% url 'temple' %}" class="card">
+        <img src="{% static 'images/temple/temple1.jpeg' %}">
+        <span>Temple</span>
+    </a>
+
+</div>
+
+{% endblock %}

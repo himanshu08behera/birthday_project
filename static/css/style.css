@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#141414;
+    font-family:Arial,sans-serif;
+    color:white;
+}
+
+.main-wrapper{
+    width:92%;
+    margin:20px auto;
+}
+
+.hero{
+    height:650px;
+    border-radius:25px;
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        to right,
+        rgba(0,0,0,.88),
+        rgba(0,0,0,.35)
+    ),
+    url("../images/last_day/last_day_2.jpeg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    padding:40px;
+}
+
+.logo{
+    color:#e50914;
+    font-size:42px;
+    font-weight:bold;
+}
+
+.hero-content{
+    margin-top:140px;
+    max-width:600px;
+}
+
+.hero-content h2{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:white;
+    color:black;
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.section-heading{
+    margin:40px 0 20px;
+    font-size:32px;
+}
+
+.movie-row{
+    display:flex;
+    gap:18px;
+    overflow-x:auto;
+    padding-bottom:20px;
+}
+
+.card{
+    min-width:230px;
+    text-decoration:none;
+    color:white;
+}
+
+.card img{
+    width:230px;
+    height:320px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.card span{
+    display:block;
+    text-align:center;
+    margin-top:10px;
+}
+
+.gallery-title{
+    text-align:center;
+    margin:30px 0;
+    font-size:40px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 10px 30px rgba(255,255,255,.15);
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.quotes-page{
+    max-width:900px;
+    margin:auto;
+}
+
+.quote-box{
+    background:#222;
+    padding:30px;
+    border-radius:15px;
+    margin-top:30px;
+}
+
+.quote-box p{
+    margin-bottom:20px;
+    line-height:1.8;
+}
+/* QUOTES PAGE */
+
+.quotes-page{
+    max-width:1000px;
+    margin:50px auto;
+    position:relative;
+    z-index:2;
+}
+
+.birthday-title{
+    text-align:center;
+    font-size:55px;
+    margin-bottom:35px;
+    color:#fff;
+    text-shadow:0 0 20px rgba(255,255,255,.4);
+}
+
+.quote-box{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.15);
+
+    padding:40px;
+    border-radius:25px;
+
+    line-height:2;
+    font-size:18px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.4);
+}
+
+.quote-box p{
+    margin-bottom:25px;
+}
+
+.ending{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    color:#ffd700;
+}
+
+/* FLOWERS */
+
+.flowers{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:1;
+}
+
+.flowers span{
+
+    position:absolute;
+
+    width:22px;
+    height:22px;
+
+    background:#ff69b4;
+
+    border-radius:
+    50% 0 50% 0;
+
+    opacity:.8;
+
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+
+    0%{
+        transform:
+        translateY(-100px)
+        rotate(0deg);
+    }
+
+    100%{
+        transform:
+        translateY(120vh)
+        rotate(720deg);
+    }
+}

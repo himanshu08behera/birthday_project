@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="flowers"></div>
+
+<div class="quotes-page">
+
+    <h1 class="birthday-title">
+        💌 A Letter To My Brother
+    </h1>
+
+    <div class="quote-box">
+
+        <p>
+          Happy Birthday, Ashish ❤️
+
+          It is difficult to express in words what these last four years have meant to me.
+          From the very first day of our college journey on 29 October 2022, you became
+          more than just a friend. We met as classmates, but somewhere along the way,
+          you became a brother. Sharing the same room for four years meant sharing not
+          just a space, but countless memories, conversations, struggles, celebrations,
+          and dreams.
+        </p>
+
+        <p>
+            From morning classes to late-night discussions, from exam stress to moments
+            of laughter, you were always there. We celebrated festivals together,
+            decorated for pujas, participated in college functions, attended events,
+            clicked endless photos, and turned ordinary days into unforgettable memories.
+        </p>
+
+        <p>
+            You have been someone I could trust without hesitation. Whenever I needed
+            support, advice, or simply someone to listen, you were there. Over time,
+            the bond became so strong that my family also came to know you, trust you,
+            and care for you.
+        </p>
+
+        <p>
+            As our college journey comes to an end on 29 April 2026, I realize that the
+            memories we created will stay with us forever. The room we shared, the
+            festivals we celebrated, the decorations we made together, the trips, the
+            photographs, the jokes, the sleepless nights, and every small moment in
+            between have become an important chapter of my life.
+        </p>
+
+        <p>
+            Thank you for being such an incredible friend, roommate, and brother.
+            No matter where life takes us after college, these memories and this bond
+            will always remain special.
+        </p>
+
+        <p>
+            Wishing you success in every dream, strength in every challenge,
+            and happiness in every moment of life.
+        </p>
+
+        <p class="ending">
+            Happy Birthday once again, brother. 🎂✨
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+
+const flowers = document.querySelector('.flowers');
+
+for(let i=0;i<50;i++){
+
+    let petal=document.createElement('span');
+
+    petal.style.left=Math.random()*100+'vw';
+
+    petal.style.animationDuration=
+    (6+Math.random()*8)+'s';
+
+    petal.style.animationDelay=
+    Math.random()*5+'s';
+
+    flowers.appendChild(petal);
+}
+
+</script>
+
+{% endblock %}
